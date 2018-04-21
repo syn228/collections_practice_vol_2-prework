@@ -27,7 +27,11 @@ end
 
 def count_elements(array)
    counter = 0
+   result = []
    array.each do |words|
+     words[:count] = counter
+     result << words
+     counter += 1
  
    end
 end
