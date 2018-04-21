@@ -32,13 +32,14 @@ def count_elements(array)
 end
 
 def merge_data(key, data)
-  binding.pry
+
   new_array = []
   new_hash = {}
-    key.each do |key, names|
+    key.each do |sym, names|
+      binding.pry
       data.each do |each_name, attributes|
         if names == each_name
-        new_hash = {key => each_name, attributes}
+  
         new_array << new_hash
       end
     end
