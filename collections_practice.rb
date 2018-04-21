@@ -26,17 +26,9 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-   counter = {}
-   result = []
-   array.each do |words|
-     words.each do |name_sym, name|
-      counter = array.count|name|
-      binding.pry
-      words[:count] = counter
-        result << words
-    end
-   end
-   result
+   array.group_by(&:itself).map do |key, value|
+     key.merge({:count => value.length})
+  end
 end
 
 def merge_data
