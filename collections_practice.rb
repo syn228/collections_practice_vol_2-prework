@@ -26,12 +26,12 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-   counter = 0
+   counter = 2
    result = []
    array.each do |words|
      words[:count] = counter
-     result << words
-     counter += 1
+     result << words.uniq
+     counter -= 1
  
    end
 end
