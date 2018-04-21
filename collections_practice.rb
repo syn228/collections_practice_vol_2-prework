@@ -27,7 +27,6 @@ end
 
 def count_elements(array)
    array.group_by(&:itself).collect do |key, value|
-     binding.pry
      key.merge({:count => value.length})
   end
 end
