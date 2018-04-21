@@ -33,7 +33,7 @@ def count_elements(array)
       counter[name] += 1
     end
    end
-   counter.each 
+   counter.each  do |name, count|
 end
 
 def merge_data
