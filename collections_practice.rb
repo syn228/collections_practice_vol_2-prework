@@ -13,7 +13,9 @@ end
 
 def first_wa(array)
   array.each do |word|
-    binding.pry
+    if word.start_with("wa") && word == String
+      return word
+    end
   end
 end
 
