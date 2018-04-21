@@ -34,6 +34,8 @@ def count_elements(array)
     end
    end
    counter.each  do |name, count|
+     binding.pry
+   end
 end
 
 def merge_data
