@@ -26,10 +26,12 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
+   counter = {}
    result = []
    array.each do |words|
      words.each do |name_sym, name|
-      words|:count| = array.count {|name| name > 0}
+      counter = array.count|name|
+      words|:count| = counter
         result << words
     end
    end
