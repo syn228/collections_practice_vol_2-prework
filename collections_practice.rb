@@ -12,8 +12,7 @@ def contain_a(array)
 end
 
 def first_wa(array)
-  array.find do |word|
-    string[0] == "w" && string[1] == "a"
+  if array
   end
 end
 
