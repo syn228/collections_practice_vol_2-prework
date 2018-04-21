@@ -26,7 +26,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-   counter = {0}
+   counter = {}
    result = []
    array.each do |words|
      words.each do |name_sym, name|
@@ -35,7 +35,6 @@ def count_elements(array)
    end
    counter.each  do |name, count|
      binding.pry
-   end
 end
 
 def merge_data
