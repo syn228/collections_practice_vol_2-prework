@@ -28,9 +28,7 @@ end
 def count_elements(array)
    result = []
    array.each do |words|
-     words[:count] = counter
-     result << words
-     counter += 1
+     words.each do |name, value|
  
    end
 end
