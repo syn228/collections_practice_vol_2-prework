@@ -30,11 +30,11 @@ def count_elements(array)
    result = []
    array.each do |words|
      words.each do |name_sym, name|
-      counter[name] += 1
+      words|:count| = counter
     end
    end
-   counter.each  do |name, count|
-     binding.pry
+   
+     
 end
 
 def merge_data
