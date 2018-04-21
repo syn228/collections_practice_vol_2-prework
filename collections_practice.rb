@@ -33,6 +33,17 @@ end
 
 def merge_data(key, data)
   binding.pry
+  new_array = []
+  new_hash = {}
+    key.each do |key, names|
+      data.each do |each_name, attributes|
+        if names == each_name
+        new_hash = {key => each_name, attributes}
+        new_array << new_hash
+      end
+    end
+  end
+  new_array
 end
 
 def find_cool
