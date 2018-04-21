@@ -13,7 +13,7 @@ end
 
 def first_wa(array)
   array.each do |word|
-    if word.start_with?("wa") && word == String
+    if word.to_s.start_with?("wa")
       return word
     end
   end
