@@ -28,10 +28,11 @@ end
 def count_elements(array)
    counter = {}
    result = []
-   array.each do |words|
+   array.each do |words, value|
+     binding.pry
      words.each do |name_sym, name|
       counter = array.count|name|
-      binding.pry
+      
       words[:count] = counter
         result << words
     end
