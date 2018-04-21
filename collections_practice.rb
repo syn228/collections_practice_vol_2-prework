@@ -29,7 +29,8 @@ def count_elements(array)
    result = []
    array.each do |words|
      words.each do |name_sym, name|
-      words|:count| = array.count
+      words|:count| = array.count {|name| name > 0}
+        result << words
     end
    end
 end
