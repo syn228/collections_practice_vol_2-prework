@@ -28,7 +28,7 @@ end
 def count_elements(array)
    result = []
    array.each do |words|
-     words.each do |name, value|
+     words.each do |name_sym, name|
       binding.pry
     end
    end
