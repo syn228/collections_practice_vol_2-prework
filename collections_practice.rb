@@ -35,6 +35,7 @@ def count_elements(array)
         result << words
     end
    end
+   result
 end
 
 def merge_data
