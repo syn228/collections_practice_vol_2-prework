@@ -37,9 +37,8 @@ def merge_data(key, data)
   new_hash = {}
     key.each do |value|
       name = value[:first_name]
-      data.each do |each_name, attributes|
-        if names == each_name
-  
+      data.each do |attributes|
+        binding.pry
         new_array << new_hash
       end
     end
