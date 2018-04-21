@@ -28,7 +28,7 @@ end
 def count_elements(array)
    counter = 0
    array.each do |words|
-     binding.pry
+ 
    end
 end
 
