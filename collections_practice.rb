@@ -30,7 +30,7 @@ def count_elements(array)
    result = []
    array.each do |words|
      words.each do |name_sym, name|
-      counter[]
+      counter[name] += 1
     end
    end
    result
