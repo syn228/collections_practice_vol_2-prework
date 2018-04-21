@@ -40,7 +40,7 @@ def merge_data(key, data)
       data.each do |attributes|
         binding.pry
         new_array << new_hash
-      end
+
     end
   end
   new_array
