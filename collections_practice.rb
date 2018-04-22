@@ -54,13 +54,12 @@ def find_cool(hash)
   hash.each do |data|
     if data[:name] == "blake" && data[:temperature] == "cool"
       new_array << data
-    
     end
   end
   new_array
 end
 
-def organize_schools
+def organize_schools(schools)
   
 end
 
