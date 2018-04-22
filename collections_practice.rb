@@ -69,6 +69,7 @@ schools.map do |school, location|
     else
       new_schools[v] << school
     end
+    end
   end
   new_schools
 end
