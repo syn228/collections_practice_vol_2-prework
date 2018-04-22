@@ -38,8 +38,10 @@ def merge_data(key, data)
     key.each do |value|
       name = value[:first_name]
       data.each do |attributes|
-        binding.pry
-        new_array << new_hash
+        attributes.each do |name_info, stats|
+          binding.pry
+        end
+        
 
     end
   end
