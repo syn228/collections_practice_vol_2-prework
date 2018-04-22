@@ -62,8 +62,10 @@ end
 def organize_schools(schools)
   city = ""
   schools.each do |information|
-    binding.pry
+    
+    
    information.each do |something|
+     binding.pry
   end
   end
 end
