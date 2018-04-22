@@ -64,6 +64,7 @@ def organize_schools(schools)
 
 schools.map do |school, location|
   location.map do |k, v|
+    binding.pry
     unless new_schools.key?(v)
       new_schools[v] = [school]
     else
