@@ -60,10 +60,10 @@ def find_cool(hash)
 end
 
 def organize_schools(schools)
-  schools.each do |school_name|
-    school_name.each do |location, idk|
+  schools.each do |school_name, location|
+
       binding.pry
-    end
+  
   end
 end
 
