@@ -62,6 +62,7 @@ end
 def organize_schools(schools)
   city = ""
   schools.each do |school_name, location_hash|
+    
     binding.pry
    
   
