@@ -50,9 +50,14 @@ def merge_data(key, data)
 end
 
 def find_cool(hash)
-  hash.each do |ashley, blake|
-    binding.pry
+  new_array = []
+  hash.each do |data|
+
+    if data[:temperature].include?("cool")
+      new_array << data
+    end
   end
+  new_array
 end
 
 def organize_schools
