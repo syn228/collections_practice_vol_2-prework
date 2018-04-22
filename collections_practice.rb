@@ -64,6 +64,7 @@ def organize_schools(schools)
   new_array = []
   schools.each do |school_name, location_hash|
     locator = location_hash[:location]
+    binding.pry
     location_hash.each do |school, location|
       if locator == location
         new_array << school_name
