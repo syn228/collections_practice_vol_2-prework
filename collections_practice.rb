@@ -60,14 +60,19 @@ def find_cool(hash)
 end
 
 def organize_schools(schools)
+  new_hash = {}
+  new_array = []
+  schools.each do |school_name, location_hash|
+    locator = location_hash[:location]
+    location_hash.each do |school, location|
+      if locator == location
+        new_array << school_name
+      end
+      new_hash[location] = new_array
+    end
+
+  end
   new_hash
-  schools.each do |information|
-    
-    
-   information.each do |something|
-     binding.pry
-  end
-  end
 end
 
 
