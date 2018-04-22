@@ -40,7 +40,8 @@ def merge_data(key, data)
       data.each do |attributes|
         attributes.each do |name_info, stats|
           binding.pry
-          if name =
+          if name == name_info
+            
         
         end
         
