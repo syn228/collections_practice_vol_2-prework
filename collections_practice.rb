@@ -42,7 +42,7 @@ def merge_data(key, data)
           binding.pry
           if name == name_info
             new_hash = {value.key(name) => name}
-            new_array << 
+            new_array << new_hash.merge(stats)
         
         end
         
