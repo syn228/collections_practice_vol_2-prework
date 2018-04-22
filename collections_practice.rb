@@ -60,21 +60,17 @@ def find_cool(hash)
 end
 
 def organize_schools(schools)
-  new_hash = {}
-  new_array = []
-  schools.each do |school_name, location_hash|
-    locator = location_hash[:location]
-   
-    location_hash.each do |school, location|
-       binding.pry
-      if locator == location
-        new_array << school_name
-      end
-      new_hash[location] = new_array
-    end
+  new_schools = {}
 
+schools.map do |school, location|
+  location.map do |k, v|
+    unless new_schools.key?(v)
+      new_schools[v] = [school]
+    else
+      new_schools[v] << school
+    end
   end
-  new_hash
+  new_schools
 end
 
 
