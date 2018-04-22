@@ -60,9 +60,11 @@ def find_cool(hash)
 end
 
 def organize_schools(schools)
-  schools.each do |school_name|
-
-      binding.pry
+  city = ""
+  schools.each do |information|
+    city = information[:location] #NYC/SF
+      information.each do |something|
+    end
   
   end
 end
