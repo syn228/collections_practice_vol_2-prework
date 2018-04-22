@@ -50,7 +50,7 @@ def merge_data(key, data)
 end
 
 def find_cool(hash)
-  hash.each do |something|
+  hash.each do |ashley, blake|
     binding.pry
   end
 end
