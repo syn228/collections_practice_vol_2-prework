@@ -41,7 +41,7 @@ def merge_data(key, data)
         attributes.each do |name_info, stats|
           binding.pry
           if name == name_info
-            
+            new_hash = 
         
         end
         
