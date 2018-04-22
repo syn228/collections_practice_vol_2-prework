@@ -63,12 +63,12 @@ def organize_schools(schools)
   new_schools = {}
 
 schools.map do |school, location|
-  location.map do |k, v|
-    binding.pry
-    unless new_schools.key?(v)
-      new_schools[v] = [school]
+  location.map do |location_key, city|
+ 
+    unless new_schools.key?(city)
+      new_schools[city] = [school]
     else
-      new_schools[v] << school
+      new_schools[city] << school
     end
     end
   end
