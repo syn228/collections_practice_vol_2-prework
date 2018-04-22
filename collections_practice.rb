@@ -60,7 +60,7 @@ def find_cool(hash)
 end
 
 def organize_schools(schools)
-  city = ""
+  new_hash
   schools.each do |information|
     
     
