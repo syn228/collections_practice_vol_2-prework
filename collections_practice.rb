@@ -52,8 +52,9 @@ end
 def find_cool(hash)
   new_array = []
   hash.each do |data|
-
-    data.delete_if {
+    if data[:name] == "blake" && data[:temperature] == "cool"
+      new_array << data
+    
     end
   end
   new_array
