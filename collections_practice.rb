@@ -49,7 +49,7 @@ def merge_data(key, data)
   new_array
 end
 
-def find_cool
+def find_cool(hash)
   
 end
 
