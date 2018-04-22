@@ -40,7 +40,7 @@ def merge_data(key, data)
       data.each do |attributes|
         attributes.each do |name_info, stats|
           if name == name_info
-            new_hash = {value.key => name}
+            new_hash = {value.key(name) => name}
             binding.pry
             new_array << new_hash.merge(stats)
           end
