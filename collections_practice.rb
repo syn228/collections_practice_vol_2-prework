@@ -61,11 +61,9 @@ end
 
 def organize_schools(schools)
   city = ""
-  schools.each do |school_name, location_hash|
-    city = location_hash[:location]
-      location_hash.each do |something|
+  schools.each do |information|
     binding.pry
-   
+   information.each do |something|
   end
   end
 end
