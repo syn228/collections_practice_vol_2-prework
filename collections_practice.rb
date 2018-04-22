@@ -64,6 +64,7 @@ def organize_schools(schools)
   schools.each do |information|
     city = information[:location] #NYC/SF
       information.each do |something|
+      binding.pry
     end
   
   end
